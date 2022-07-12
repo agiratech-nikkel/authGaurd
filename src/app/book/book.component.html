@@ -1,0 +1,6 @@
+<button class="btn btn-danger btn-lg btn-block" (click) = "logoff()">LogOff</button>
+<div *ngFor="let x of BookData">
+    <p>{{x.title}}</p>
+    <button class="btn btn-primary btn-lg btn-block" [routerLink]="['/book/book-detail',x.title]">Details</button>
+</div>
+
